@@ -7,7 +7,7 @@ CONTAINER_NAME = "flaskapi-container"
 stages {
 stage('Checkout') {
 steps {
-git branch: 'main', url: 'https://www.google.com/search?q=https://github.com/ParamjeetDhanjal/jenkins.git'
+git branch: 'main', url: 'https://github.com/ParamjeetDhanjal/jenkins.git'
 }
 }
 stage('Build') {
@@ -36,4 +36,3 @@ echo "❌ Build/Test/Deploy failed"
 }
 }
 }
-
